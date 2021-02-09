@@ -15,6 +15,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="./script/main.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <style>
+    ul.news-list{
+      list-style-type: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -35,6 +40,7 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
 				  <li><a href="index.html">Home</a></li>
+          <li><a href="#news">News</a></li>
 				  <li><a href="#projects">Projects</a></li>
 				  <li><a href="#publications">Research output</a></li>
 				  <li><a href="./files/CV/Predrag_Filipovikj_CV__long_.pdf" target="_blank">CV</a></li>
@@ -57,7 +63,7 @@
 			<p style="font-size:25px;">Welcome to my personal web page!</p>
                 -->
                 <div style="margin-top:1%; text-align:justify;">
-					
+
 
 					<p>
             I am employed at <a target="_blank" href="https://www.scania.com/"> Scania AB CV</a> as a Test Method Engineer. I am a part of the complete vehicle integration testing team, and my main responsibility is to improve the verification methods for Hardware- and Software in the loop (HIL/SIL) verification of our products. Before joining Scania, I was a Postdoctoral Researcher at the <a href="https://www.kth.se/" target="_blank">KTH Royal Institute of Sweden</a> in the division of <a href="https://www.kth.se/cs/tcs" target="_blank">Theoretical Computer Science</a>. I obtained a Ph.D. in Computer Science with specialization in Formal Modeling and Analysis of Embedded Software from <a href="http://www.es.mdh.se/" target="_blank">Mälardalen University</a> in 2019.
@@ -69,11 +75,12 @@
           <p>
             At the moment, I am mostly focused on system integration testing techniques for HIL/SIL testing.
           </p>
+          <ul>
+            <li><strong>If you are a student who is looking for a thesis project within the broad area of software verification (formal verification or testing) please do not hesitate to get in touch.</strong></li>
+            <li><strong>If you are an academic or industrial reseasrcher and you would like to establish a cooperation, just drop me an email.</strong></li>
+		  </ul>
           <p>
-              <strong>If you are a student who is looking for a thesis project within the broad area of software verification (formal verification or testing) please do not hesitate to get in touch.</strong>
-		  </p>
-          <p>
-		  <strong>If you are an academic or industrial reseasrcher and you would like to establish a cooperation, just drop me an email.</strong>
+
           </p>
           </div>
             </div>
@@ -96,6 +103,14 @@
               <dd><a target="_blank" href="https://www.linkedin.com/in/predragfilipovikj">LinkedIn</a></dd>
             </div>
 
+            <!-- News -->
+            <div class="col-md-8" style="display: block;">
+                <h2 id="news">News</h2>
+                <ul class="news-list">
+                  <li> ... </li>
+                </ul>
+            </div>
+
             <!-- Projects -->
             <div class="col-md-8" style="display: block;">
                 <h2 id="projects">Projects</h2>
@@ -111,7 +126,7 @@
             <!-- Research output -->
             <div class="col-md-8" style="display: block;">
                 <h2 id="publications">Research output</h2>
-		    
+
 		 <p>
             		I have published more than 10 peer-reviewed scientific publications and several technical reports. The complete list of publications is available blow, but you can also check out my <a target="_blank" href="https://scholar.google.se/citations?user=YL9zcQgAAAAJ&hl=en">Google Scholar</a> profile.
 		</p>
@@ -126,7 +141,7 @@
 		<p>
 		    I am also contributing to the dissemination of my research results through various tools. I have developed, either myself or with other developers the following tools and libraries:
 		    </p>
-		<p>	
+		<p>
             	<ul>
               <li><a href="https://github.com/predragf/simppaal" target="_blank">SIMPPAAL</a>: A tool for statistical model checkig of Simulink models.</li>
               <li><a href="https://github.com/predragf/propas" target="_blank">ProPAS</a>: A tool for formal requirements specification using specification patterns.</li>
