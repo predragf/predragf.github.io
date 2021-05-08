@@ -14,5 +14,9 @@ ul.news-list li{
 ul.publication-list li {
   margin-top: 5px;
   font-size: 16px;
+}
 
+.main-author {
+  font-weight: bold;
+  text-decoration: underline;
 }
