@@ -20,3 +20,8 @@ ul.publication-list li {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
