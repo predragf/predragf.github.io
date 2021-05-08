@@ -10,3 +10,9 @@ ul.news-list li{
 .main-content li:before{
   content: "\00BB \0020";
 }
+
+ul.publication-list li {
+  margin-top: 5px;
+  font-size: 16px;
+
+}
