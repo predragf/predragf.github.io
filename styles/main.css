@@ -25,3 +25,24 @@ ul.publication-list li {
   font-weight: bold;
   font-style: italic;
 }
+
+.side-container{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin-top: 3px;
+}
+
+.icon{
+  padding-bottom: 5px;
+}
+
+.icon > img {
+  height: 25px;
+  width: 25px;
+}
+
+.icon-text{
+  padding-left: 5px;
+  padding-top: 2px;
+}
