@@ -1,7 +1,6 @@
 window.onload = function() {
 
   sideLinks = document.getElementsByClassName("side-container")
-  console.log(sideLinks)
 
   for (sideLink of sideLinks){
     sideLink.addEventListener('mouseleave', function(){
@@ -11,8 +10,8 @@ window.onload = function() {
 
       bwImage.classList.remove("hidden-image");
       colorImage.classList.add("hidden-image");
-
     })
+
     sideLink.addEventListener('mouseenter', function(){
 
       bwImage = this.querySelectorAll('.bw-image')[0];
@@ -22,7 +21,6 @@ window.onload = function() {
       bwImage.classList.add("hidden-image");
     })
   }
-
 };
 
 function sendEmail(){
@@ -30,6 +28,5 @@ function sendEmail(){
   lName = "filipovikj"
   domain = "gmail.com"
   myEmail = fName + "." + lName + "@" + domain;
-  console.log(myEmail)
   window.location.href = "mailto:" + myEmail;
 }
