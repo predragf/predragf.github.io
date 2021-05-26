@@ -46,3 +46,9 @@ ul.publication-list li {
   padding-left: 5px;
   padding-top: 2px;
 }
+
+.custom-footer{
+  display: block;
+  width: 100%;
+  align-items: right;
+}
