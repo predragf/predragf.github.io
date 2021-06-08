@@ -56,3 +56,12 @@ ul.publication-list li {
 .hidden-image{
   display: none;
 }
+
+li.paper::before {
+  content: none !important;
+}
+
+.paper-links {
+  display: block;
+  clear: both;
+}
