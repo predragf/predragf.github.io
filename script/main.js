@@ -21,6 +21,7 @@ window.onload = function() {
       bwImage.classList.add("hidden-image");
     })
   }
+  newsFeedAdjust()
 };
 
 function sendEmail(){
@@ -29,4 +30,29 @@ function sendEmail(){
   domain = "gmail.com"
   myEmail = fName + "." + lName + "@" + domain;
   window.location.href = "mailto:" + myEmail;
+}
+
+
+function newsFeedAdjust() {
+  newsFeedList = document.getElementById("news-feed-list")
+  newsItems = newsFeedList.getElementsByTagName("li")
+  for (let itemPos = 0; itemPos < newsItems.length; itemPos++) {
+    newsItem = newsItems[itemPos]
+    if (itemPos > 4) {
+        newsItem.classList.toggle("hidden");
+    }
+  }
+}
+
+function btnShowNewsClicked(element){
+  showAllText = "Show all news";
+  hideOldText = "Hide old news";
+  currentText = element.textContent;
+  if (currentText.startsWith("Hide")){
+    element.textContent = showAllText;
+  } else {
+    element.textContent = hideOldText;
+  }
+
+  newsFeedAdjust();
 }
