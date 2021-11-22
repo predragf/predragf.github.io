@@ -42,17 +42,11 @@ function newsFeedAdjust() {
         newsItem.classList.toggle("hidden");
     }
   }
-}
-
-function btnShowNewsClicked(element){
-  showAllText = "Show all news";
-  hideOldText = "Hide old news";
-  currentText = element.textContent;
-  if (currentText.startsWith("Hide")){
-    element.textContent = showAllText;
+  if (newsItems.length > 4){
+    document.getElementById("btnShowAllNews").classList.toggle("hidden")
+    document.getElementById("btnHideOldNews").classList.toggle("hidden")
   } else {
-    element.textContent = hideOldText;
+    document.getElementById("btnShowAllNews").classList.add("hidden")
+    document.getElementById("btnHideOldNews").classList.add("hidden")
   }
-
-  newsFeedAdjust();
 }
